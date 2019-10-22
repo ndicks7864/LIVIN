@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>LIVIN</title>
+  <link href="css/main.css" rel="stylesheet">
+  <!-- Owl Carousel Styles -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" type="image/png" href="img/skateboard.png">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Forum|Kalam|Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cantarell:400i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+
+      <!--
+      <div id="logo">
+        <img src= "img/logo.PNG" alt="Città Dei Ravioli">
+      </div>
+
+      <div id="logo_phone">
+        <img src= "img/logo_phone.png" alt="Città Dei Ravioli">
+      </div>
+    -->
+
+      <div class="name" id="name">
+        <h1> LIVIN </h1>
+      </div>
+
+      <div class="topnav" id="navigation">
+          <a href="index.html"><span class = "underlined">LIVIN</span></a>
+          <a href="men.html"><span class = "underlined">Men</span></a>
+          <a href="women.html"><span class = "underlined">Women</span></a>
+          <a href="#more"><span class = "underlined">Shoes</span></a>
+          <a href="#more"><span class = "underlined">Info</span></a>
+        </div>
+
+    </header>
+
+      <main class="mens-page">
+              <div class="col" id="mens_shirts">
+                <h3> Men's Shirts </h3>
+                <img src="img/skater_man_shirts.jpg" alt="man_shirt_model">
+                <h4><a href="#more">Quality shirts for the best prices!</a></h4>
+              </div>
+
+              <div class="col" id="mens_pants">
+                <h3> Men's Pants </h3>
+                <img src="img/skater_man_pants.jpg" alt="man_pants_model">
+                <h4><a href="#more">Quality pants for the best prices!</a></h4>
+              </div>
+
+              <div class="col" id="mens_bags">
+                <h3> Men's Bags </h3>
+                <img src="img/skater_man_bags.jpg" alt="man_bags_model">
+                <h4><a href="#more">Quality bags for the best prices!</a></h4>
+              </div>
+
+              <div class="col" id="mens_hats">
+                <h3> Men's Hats </h3>
+                <img src="img/skater_man_hats.jpg" alt="man_hats_model">
+                <h4><a href="#more">Quality hats for the best prices!</a></h4>
+              </div>
+      </main>
+
+      <footer>
+        <div id="social">
+
+          <h2> Social Pages </h2>
+          <p>
+          <a href="https://www.instagram.com/">
+          	<img class="hvr-bob" src="img/instagram_logo.png" alt="Picture of Instagram Logo"> </a>
+
+          	<a href="https://www.twitter.com/">
+          	<img class="hvr-bob" src="img/twitter_logo.png" alt="Picture of Twitter Logo"> </a>
+          </p>
+          <p>
+          	<a href="https://www.facebook.com/">
+          	<img class="hvr-bob" src="img/facebook_logo.png" alt="Picture of Facebook Logo"> </a>
+
+            <a href="https://www.youtube.com/">
+          	<img class="hvr-bob" src="img/youtube_logo.png" alt="Picture of Youtube Logo"> </a>
+
+          </p>
+
+        </div>
+
+        <div id="contact">
+            <h2> Phone Number </h2>
+            <p> Location 1: 806-247-0742 </p>
+            <p> Location 2: 806-230-0513 </p>
+            <p> Location 3: 806-450-9214 </p>
+            <p> Location 4: 806-782-5671 </p>
+            <h2> Email </h2>
+            <p> LIVIN@gmail.com </h2>
+        </div>
+
+        <div id="credits">
+          <h3> Created and designed by Nia D. </h3>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- first load jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <!-- owl carousel stuff -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.owl-carousel').owlCarousel({
+            dots: false,
+            items: 1,
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 6500,
+            autoplayHoverPause: true
+        })
+      });
+    </script>
+
+  <script type="text/javascript">
+  //auto expand textarea
+  function adjust_textarea(h) {
+      h.style.height = "20px";
+      h.style.height = (h.scrollHeight)+"px";
+  }
+  </script>
+</div>
+
+</body>
+</html>

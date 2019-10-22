@@ -1,0 +1,575 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+  background-color: #ffffff;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+div.container {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+   /* max-width: 1500px;  disable this line if you want full-width layouts */
+ }
+
+/*div.col-container {
+  display: table;
+  width: 100%;
+}
+
+div.col {
+  display: table-cell;
+}
+*/
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  /* border: 3px solid #990000; disable this line once layout works */
+  align-items: center;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "name"
+    "navigation";
+}
+
+main {
+  /* border: 3px solid #009900; disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "menu"
+    "about_us"
+    "hours"
+    "locations"
+    "reviews";
+}
+
+footer {
+/*  border: 3px solid #000099; disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "social contact"
+    "credits credits";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name name"
+      "navigation navigation";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel"
+      "about_us about_us"
+      "hours locations"
+      "reviews reviews";
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "contact social"
+    "credits credits";
+  }
+
+
+  main.mens-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "mens_shirts mens_pants"
+    "mens_bags mens_hats";
+  }
+
+  main.woemns-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "womens_shirts womens_pants"
+    "womens_bags womens_hats";
+  }
+
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    background-color: #ffffff;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr;
+    grid-template-areas:
+      "name name"
+      "navigation navigation";
+
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "carousel carousel"
+      "about_us about_us"
+      "hours locations"
+      "reviews reviews";
+  }
+
+  main.menu-page {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "social contact"
+    "credits credits";
+  }
+
+  div#ravioli {
+    grid-column: span 3;
+  }
+
+  div#salads_and_soups {
+    grid-column: span 2;
+  }
+
+  div#breads_pastas {
+    grid-column: span 2;
+  }
+
+}
+
+@media (min-width: 600px) {
+  div#logo_phone {
+    display: none;
+  }
+}
+
+@media (max-width: 599px) {
+  div#carousel {
+  display: none;
+  }
+  div#logo {
+    display: none;
+  }
+  div#t-shirt {
+  	display: none;
+	}
+
+}
+
+div {
+ /*border: 1px solid #999999;*/
+ text-align: center;
+}
+
+main div {
+    /*min-height: 80px; disable this line once layout works */
+}
+
+
+div#name {
+    grid-area: name;
+}
+
+div#logo {
+  grid-area: logo;
+}
+
+div#logo_phone {
+  grid-area: logo_phone;
+}
+
+div#menu {
+  grid-area: menu;
+}
+
+div#about_us {
+  grid-area: about_us;
+}
+
+div#navigation {
+  grid-area: navigation;
+}
+
+
+div#coupons {
+  grid-area: coupons;
+}
+
+div#hours {
+  grid-area: hours;
+}
+
+div#carousel {
+grid-area: carousel;
+overflow: hidden;
+}
+
+div#reviews {
+  grid-area: reviews;
+}
+
+div#social {
+  grid-area: social;
+}
+
+div#contact {
+  grid-area: contact;
+}
+
+div#credits {
+  grid-area: credits;
+}
+
+div#t-shirt {
+  grid-area: t-shirt;
+}
+
+div#ravioli {
+  grid-column: span 3;
+}
+
+div#salads_and_soups {
+  grid-column: span 2;
+}
+
+div#breads_pastas {
+  grid-column: span 2;
+}
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+}
+
+/* Headings */
+h1 {
+  font-family:'Permanent Marker', cursive;
+  font-size: 100px;
+  text-align: center;
+}
+
+
+h1.name {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+h1.menu {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 100px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/*h1.logo:hover + img {
+  display: block;
+}
+*/
+
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  color: #8f271f
+}
+
+h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 35px;
+  color: #8f271f
+}
+
+h4 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h5 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 30px;
+}
+
+h6 {
+
+}
+
+hr {
+  display: block;
+  margin-left: 60px;
+  margin-right: 60px;
+  border-width: 3px;
+  color: #000000;
+}
+/* Paragraphs and lists */
+
+p {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+p.reviews {
+font-family: 'Cantarell', sans-serif;
+font-size: 20px;
+line-height: 1.5;
+}
+
+p.menu {
+font-family: 'Cantarell', sans-serif;
+font-size: 18px;
+padding-left: 65px;
+padding-right: 65px;
+line-height: 1.5;
+}
+
+ol {
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+li {
+text-align: center
+}
+
+li.ravioli {
+  float: left;
+  max-width: 700px;
+}
+
+li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+span.price
+{
+  text-align: right;
+  color: #C5333E;
+  font-weight: bold;
+}
+
+/* tables */
+
+caption {
+
+}
+
+table {
+margin-left: auto;
+margin-right: auto;
+border-collapse: collapse;
+}
+
+thead {
+font-weight: bold;
+}
+
+tr {
+color: #000000;
+font-family: 'Permanent Marker', cursive;
+background-color: #ffffff;
+font-size: 19px;
+}
+
+th {
+  /* background-color: #0F2548; */
+  color: #FEFEFE;
+  padding: 7px;
+}
+
+td {
+  padding: 7px;
+  font-family: 'Cantarell', sans-serif;
+}
+
+/* images */
+img {
+  max-width: 100%
+}
+
+img.logo {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+iframe {
+  max-width: 100%
+}
+
+/* links */
+a {
+  font-family: 'Cantarell', sans-serif;
+  font-size: 22px;
+}
+
+a:link {
+color: #8f271f;
+}
+
+a:visited {
+color: #8f271f;
+}
+
+a:hover {
+color: #C5333E;
+}
+
+a:active {
+color: #444444;
+}
+
+/* navagtion bar */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #ffffff;
+    display: flex;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: #000000;
+    flex-grow: 1;
+    text-align: center;
+    padding: 4px 6px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Quattrocento Sans', sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+
+}
+
+.underlined {
+  border-bottom: 3px solid #ffffff;
+}
+
+.underlined:hover {
+  border-bottom: 3px solid #000000;
+}
+
+/* Add a color to the active/current link */
+
+
+/*********** End Content Styles ***********/
